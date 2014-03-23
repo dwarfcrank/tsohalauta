@@ -1,5 +1,6 @@
 CREATE TABLE boards (
-    name text UNIQUE
+    name text UNIQUE,
+    description text NOT NULL
 );
 
 CREATE TABLE users (

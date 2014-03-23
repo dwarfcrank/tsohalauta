@@ -1,4 +1,4 @@
-INSERT INTO boards VALUES('testboard');
+INSERT INTO boards VALUES('testboard', 'Testing, testing');
 
 INSERT INTO users VALUES(0, 0, 'Anonymous', E'\\x00');
 
