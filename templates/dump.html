@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+    <head>
+        <title>{{ page_title }}</title>
+    </head>
+    <body>
+        <ul id="navigation">
+            <p>Posts in {{ board_name }}:</p>
+            {% for post in posts %}
+            <li>
+            id: {{ post[0] }} <br />
+            parent_id: {{ post[1] }} <br />
+            poster_ip: {{ post[2] }} <br />
+            poster_uid: {{ post[3] }} <br />
+            posted_at: {{ post[4] }} <br />
+            content: {{ post[5] }} <br />
+            image_url: {{ post[6] }} <br />
+            </li>
+            {% endfor %}
+
+        </ul>
+    </body>
+</html>
